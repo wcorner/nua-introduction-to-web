@@ -50,7 +50,8 @@ h6 {
 /* Styles */
 
 * {
-    font-family: Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro, sans-serif;
+    font-family: Avenir, Montserrat, Corbel, URW Gothic, source-sans-pro,
+        sans-serif;
 }
 
 .is-dark {
@@ -66,7 +67,24 @@ header {
     border-radius: 1rem 1rem 2rem 2rem;
     margin: 1rem;
     color: var(--dark);
-    background: radial-gradient(circle at 100% 0%, rgb(0, 255, 128), rgba(0, 255, 128, 0)), radial-gradient(circle at 0% 100%, rgb(173, 255, 214), rgba(173, 255, 214, 0))
+    background: radial-gradient(
+            circle at 100% 0%,
+            rgb(0, 255, 128),
+            rgba(0, 255, 128, 0)
+        ),
+        radial-gradient(
+            circle at 0% 100%,
+            rgb(173, 255, 214),
+            rgba(173, 255, 214, 0)
+        );
+}
+
+header a {
+    color: var(--dark);
+}
+
+header a:hover {
+    color: var(--light);
 }
 
 header ul {
@@ -96,10 +114,15 @@ main img {
     border-radius: 1rem;
 }
 
+section h2 {
+    text-align: center;
+}
+
 article {
     border: solid 1px var(--primary);
     padding: 1rem;
-   border-radius: 1rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
 }
 
 .card-list ul {
@@ -107,7 +130,7 @@ article {
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); */
     gap: 1rem;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 .card-list ul li {
     border: solid 1px var(--primary);
