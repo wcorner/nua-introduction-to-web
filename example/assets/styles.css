@@ -62,7 +62,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 2rem 2rem;
+    margin: 1rem;
     color: var(--dark);
     background: radial-gradient(circle at 100% 0%, rgb(0, 255, 128), rgba(0, 255, 128, 0)), radial-gradient(circle at 0% 100%, rgb(173, 255, 214), rgba(173, 255, 214, 0))
 }
@@ -97,7 +99,7 @@ main img {
 article {
     border: solid 1px var(--primary);
     padding: 1rem;
-    border-radius: 1rem;
+   border-radius: 1rem;
 }
 
 .card-list ul {
