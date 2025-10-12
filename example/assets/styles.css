@@ -60,6 +60,8 @@ h6 {
 }
 
 header {
+    top: 1rem;
+    position: sticky;
     display: flex;
     align-items: center;
     justify-content: space-between;
