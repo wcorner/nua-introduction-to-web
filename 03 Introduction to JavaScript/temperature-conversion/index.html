@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature Conversion</title>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
-    <script type="text/javascript" src="temp-conversion.js"></script>
+    <script type="text/javascript" src="temp-conversion.js" defer></script>
 </head>
 <body>
 
     <section class = "container">
         <article id = "input">
             <label for="temperature">Enter a temperature value in degrees Kelvin.</label><br/>
-            <input type="number" id ="temp" name="temp" min="0" ><br/>
-            <input type="button" id="button" value="calculate" onclick="tempCalc()">
+            <input type="number" id="temp" name="temp" min="0" ><br/>
+            <input type="button" id="button" value="calculate">
         </article>
         <article>
             <h1 id ="kelvin">The temperature is X degrees Kelvin.</h1>

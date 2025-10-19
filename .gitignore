@@ -1,0 +1,10 @@
+# IDE-specific settings (not critical to share)
+.settings/
+
+# STM32CubeIDE specific files
+.vscode/*
+!.vscode/*.json
+
+# System files
+.DS_Store
+Thumbs.db

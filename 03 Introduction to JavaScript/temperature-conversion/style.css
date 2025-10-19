@@ -51,6 +51,7 @@ label {
 }
 
 #button{
+    cursor: pointer;
     width: 20%;
     height: auto;
     background-color:rgb(176, 75, 7);
