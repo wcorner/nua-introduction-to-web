@@ -1,7 +1,5 @@
-# IDE-specific settings (not critical to share)
+# IDE-specific settings
 .settings/
-
-# STM32CubeIDE specific files
 .vscode/*
 !.vscode/*.json
 
