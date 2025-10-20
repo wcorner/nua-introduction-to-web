@@ -1,7 +1,8 @@
 :root {
-    --primary: #4fff46;
+    --primary: #3dff33;
     --light: #f3f3f3;
     --dark: #313131;
+    --dark-gradient: linear-gradient(to bottom,#313131 0%, #3d4d3c 90%);
 }
 
 /* Simple CSS Reset */
@@ -55,7 +56,7 @@ h6 {
 }
 
 .is-dark {
-    background: var(--dark);
+    background: var(--dark-gradient);
     color: var(--light);
 }
 
@@ -100,11 +101,12 @@ header ul {
 }
 
 main {
-    max-width: 70rem;
+    max-width: 76rem;
     margin: 2rem auto 0;
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    font-size: 1.2rem;
 }
 
 main img {
@@ -136,7 +138,7 @@ article {
 }
 .card-list ul li {
     border: solid 1px var(--primary);
-    padding: 1rem;
+    padding: 2rem 1rem;
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
