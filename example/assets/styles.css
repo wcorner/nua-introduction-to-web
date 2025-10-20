@@ -129,8 +129,8 @@ article {
 
 .card-list ul {
     list-style: none;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin: 1rem;
 }
@@ -141,6 +141,7 @@ article {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    flex: 1 1 300px;
 }
 
 footer {
