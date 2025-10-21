@@ -6,7 +6,6 @@
     <title>CSS Styling Example - Blank Slate</title>
 </head>
 
-
 <body>
     <header>
         <h1>CSS Styling Example Page</h1>
@@ -48,5 +47,20 @@
     <footer>
         <p>Remember to save your CSS and HTML files after making changes to see the results!</p>
     </footer>
+
+    <script>
+
+        const quickMaths = (a = 1, b = 2, c =6) => Number(a) +  Number(b) +  Number(c);
+
+        console.log(quickMaths());
+
+        const logKey = function(event){
+            console.log(event);
+            alert(`You pressed ${event.key}.`)
+        };
+
+        document.addEventListener("keydown", logKey)
+
+    </script>
 </body>
 </html>
