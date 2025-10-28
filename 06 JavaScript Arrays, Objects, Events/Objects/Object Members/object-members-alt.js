@@ -28,8 +28,13 @@ const recipeCarousel = function () {
 
   for (const recipe of currentRecipies) {
     const article = document.createElement("article");
-    article.innerHTML = `<h1>${recipe.name}</h1><p>Article preview text here!</p>`;
+
+    article.innerHTML = `<h2>${recipe.name}</h2><p>Article preview text here!</p>`;
     container.append(article);
+
+    setTimeout(()=> {
+        article.classList.add("entered");
+    }, 10);
   }
 };
 
