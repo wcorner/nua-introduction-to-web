@@ -2,9 +2,11 @@ let latestRecipes = ["Triple Chocolate Cookies", "Classic Crepes", "Mushroom Str
     "Perfect Roast Potatoes", "Butter Chicken", "Apple & Blackberry Crumble"
 ];
 
+latestRecipes.unshift("Yorkshire Puddings")
+
 let i = 0;
 //let h2 = document.querySelector("article:nth-of-type("+i+") h2")
-let h2 = document.getElementById("Art"+ i);
+// let h2 = document.getElementById("Art"+ i);
 
 const recipeCarousel = function()
 {
@@ -12,8 +14,8 @@ const recipeCarousel = function()
     console.log(recipe);
     i = latestRecipes.indexOf(recipe)+1;
     console.log(i);
-    //h2 = document.querySelector("article:nth-of-type("+i+") h2");
-    h2 = document.getElementById("Art"+i);
+    h2 = document.querySelector("article:nth-of-type("+i+") h2");
+    // h2 = document.getElementById("Art"+i);
     console.log(h2);
     h2.innerHTML = recipe.toString();
     if (i >=8){
@@ -23,8 +25,8 @@ const recipeCarousel = function()
 };
 
 
-latestRecipes = latestRecipes.filter(function(recipe){
-    return !recipe.toString().includes("Chicken");
-});
+// latestRecipes = latestRecipes.filter(function(recipe){
+//     return !recipe.toString().includes("Chicken");
+// });
 
 recipeCarousel();

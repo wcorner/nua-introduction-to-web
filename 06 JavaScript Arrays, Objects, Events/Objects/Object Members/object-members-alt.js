@@ -22,6 +22,10 @@ let currentRecipies = latestRecipes;
 const recipeCarousel = function () {
   const container = document.querySelector(".container");
 
+  if (!container) {
+    return;
+  }
+
   for (const recipe of currentRecipies) {
     const article = document.createElement("article");
     article.innerHTML = `<h1>${recipe.name}</h1><p>Article preview text here!</p>`;

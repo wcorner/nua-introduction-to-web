@@ -50,18 +50,26 @@
 
     <script>
 
-        const quickMaths = (a = 1, b = 2, c =5) => {
-            return Number(a) +  Number(b) +  Number(c);
-        }
+        // const quickMaths = (a = 1, b = 2, c =5) => {
+        //     return Number(a) +  Number(b) +  Number(c);
+        // }
 
-        console.log(quickMaths());
+        // console.log(quickMaths());
 
-        const logKey = function(event){
-            console.log(event);
-            alert(`You pressed ${event.key}.`)
-        };
+        // const logKey = function(event){
+        //     console.log(event);
+        //     alert(`You pressed ${event.key}.`)
+        // };
 
-        document.addEventListener("keydown", logKey)
+        // document.addEventListener("keydown", logKey)
+
+        const dairyProducts = ["Milk", "Cream", "Cheese", "Ice Cream", "Yoghurt"];
+        
+        const modifiedProducts = dairyProducts.filter(function(product){
+            return product.length === 6;
+        })
+
+        console.log(modifiedProducts)
 
     </script>
 </body>
