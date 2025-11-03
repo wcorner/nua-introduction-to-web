@@ -32,8 +32,8 @@ const recipeCarousel = function () {
     article.innerHTML = `<h2>${recipe.name}</h2><p>Article preview text here!</p>`;
     container.append(article);
 
-    setTimeout(()=> {
-        article.classList.add("entered");
+    setTimeout(() => {
+      article.classList.add("entered");
     }, 10);
   }
 };
