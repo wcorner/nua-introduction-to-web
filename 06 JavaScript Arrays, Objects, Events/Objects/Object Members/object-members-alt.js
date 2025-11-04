@@ -1,9 +1,11 @@
 //CONSTRUCTOR ARRAY
-function LatestRecipes(recName, v, vG, gF) {
-  this.name = recName;
-  this.vegetarian = v;
-  this.vegan = vG;
-  this.glutenFree = gF;
+class LatestRecipes {
+  constructor(recName, v, vG, gF) {
+    this.name = recName;
+    this.vegetarian = v;
+    this.vegan = vG;
+    this.glutenFree = gF;
+  }
 }
 
 let latestRecipes = [

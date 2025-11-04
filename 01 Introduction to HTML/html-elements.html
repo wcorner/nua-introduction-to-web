@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="script.js" defer></script>
+    <!-- <script type="text/javascript" src="script.js" defer></script> -->
     <title>CSS Styling Example - Blank Slate</title>
 </head>
 
@@ -51,6 +51,25 @@
     <footer>
         <p>Remember to save your CSS and HTML files after making changes to see the results!</p>
     </footer>
+
+    <script>
+        let myString = "Stings are awesome!";
+
+        myString = myString.replace("awesome","cool");
+
+        console.log(myString);
+
+        function getRandomInt(min, max) {
+            const random = Math.random();
+            console.log(random);
+            const minCeil = Math.ceil(min);
+            const maxFloor = Math.floor(max);
+            return Math.floor(random * (maxFloor - minCeil) + minCeil);
+        }
+        
+        console.log(getRandomInt(1, 20));
+
+    </script>
 
 </body>
 </html>
