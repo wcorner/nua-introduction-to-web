@@ -4,10 +4,9 @@ let latestRecipes = ["Triple Chocolate Cookies", "Classic Crepes", "Mushroom Str
 
 
 // global variable initialization
-let i = 0
+let i = 0;
 let h2 = document.getElementById("Art"+ i);
 let recipeTitle = "Null";
-
 
 
 /* The recipeCarousel function takes each item in the array 
@@ -20,6 +19,7 @@ const recipeCarousel = function()
     //for loop iterating through every object still in the array
     for (const recipe of latestRecipes){
         i = latestRecipes.indexOf(recipe)+1;
+        console.log(latestRecipes[i]);
         h2 = document.getElementById("Art"+ i);
         h2.innerHTML = latestRecipes[i];
         recipeTitle = h2.innerHTML;
